@@ -1,0 +1,929 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+    "txHash": "0xca762fabba7e43eeb89cd397df925d1e7f7af36dc85f17453cd81220d5ace4be"
+  },
+  "proxies": [
+    {
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "txHash": "0x3563383efdd8d38e79e9a77a560a1c0aff6981f9a57688adf530d9c4c1b2b18d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "txHash": "0xe0c63e5bdfb47764e83c723ac37a7f0377431d72071bf3a6146cabcd798628b1",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "0938ab186019bb7f9bb0627a5fcb81daa28429943b28796bf6ef7dcee399472a": {
+      "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+      "txHash": "0x953bf1bc5fe0c6bcdea97023e8e21331ab50facc499d92364f5f5fdd2de14ced",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:105"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:106"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:164"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Upgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:631"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Upgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:633"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ERC20Upgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:635"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:637"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:638"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:994"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:168"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:208"
+          },
+          {
+            "label": "marketingFeeOnBuy",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1302"
+          },
+          {
+            "label": "marketingFeeOnSell",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1303"
+          },
+          {
+            "label": "developmentFeeOnBuy",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1305"
+          },
+          {
+            "label": "developmentFeeOnSell",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1306"
+          },
+          {
+            "label": "rewardFeeOnBuy",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1308"
+          },
+          {
+            "label": "rewardFeeOnSell",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1309"
+          },
+          {
+            "label": "liquidityFeeOnBuy",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1311"
+          },
+          {
+            "label": "liquidityFeeOnSell",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1312"
+          },
+          {
+            "label": "kodiBuyBackFeeOnBuy",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1314"
+          },
+          {
+            "label": "kodiBuyBackFeeOnSell",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1315"
+          },
+          {
+            "label": "_totalFeesOnBuy",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1317"
+          },
+          {
+            "label": "_totalFeesOnSell",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1318"
+          },
+          {
+            "label": "marketingWallet",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_address",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1320"
+          },
+          {
+            "label": "developmentWallet",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_address",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1321"
+          },
+          {
+            "label": "kodiBuybackWallet",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_address",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1322"
+          },
+          {
+            "label": "walletToWalletTransferWithoutFee",
+            "offset": 20,
+            "slot": "165",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1324"
+          },
+          {
+            "label": "uniswapV2Router",
+            "offset": 0,
+            "slot": "166",
+            "type": "t_contract(IUniswapV2Router02)2020",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1326"
+          },
+          {
+            "label": "uniswapV2Pair",
+            "offset": 0,
+            "slot": "167",
+            "type": "t_address",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1327"
+          },
+          {
+            "label": "DEAD",
+            "offset": 0,
+            "slot": "168",
+            "type": "t_address",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1329"
+          },
+          {
+            "label": "swapping",
+            "offset": 20,
+            "slot": "168",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1331"
+          },
+          {
+            "label": "swapTokensAtAmount",
+            "offset": 0,
+            "slot": "169",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1332"
+          },
+          {
+            "label": "swapEnabled",
+            "offset": 0,
+            "slot": "170",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1333"
+          },
+          {
+            "label": "swapWithLimit",
+            "offset": 1,
+            "slot": "170",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1334"
+          },
+          {
+            "label": "tradingEnabled",
+            "offset": 2,
+            "slot": "170",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1336"
+          },
+          {
+            "label": "launchTime",
+            "offset": 0,
+            "slot": "171",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1337"
+          },
+          {
+            "label": "antibotEnabled",
+            "offset": 0,
+            "slot": "172",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1338"
+          },
+          {
+            "label": "_isExcludedFromFees",
+            "offset": 0,
+            "slot": "173",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1340"
+          },
+          {
+            "label": "automatedMarketMakerPairs",
+            "offset": 0,
+            "slot": "174",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1341"
+          },
+          {
+            "label": "dividendTracker",
+            "offset": 0,
+            "slot": "175",
+            "type": "t_contract(DividendTracker)3793",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1343"
+          },
+          {
+            "label": "rewardToken",
+            "offset": 0,
+            "slot": "176",
+            "type": "t_address",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1344"
+          },
+          {
+            "label": "gasForProcessing",
+            "offset": 0,
+            "slot": "177",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1345"
+          },
+          {
+            "label": "_isExcludedFromMaxWalletLimit",
+            "offset": 0,
+            "slot": "178",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1799"
+          },
+          {
+            "label": "maxWalletLimitEnabled",
+            "offset": 0,
+            "slot": "179",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1800"
+          },
+          {
+            "label": "maxWalletAmount",
+            "offset": 0,
+            "slot": "180",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1801"
+          },
+          {
+            "label": "_isExcludedFromMaxTxLimit",
+            "offset": 0,
+            "slot": "181",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1835"
+          },
+          {
+            "label": "maxTransactionLimitEnabled",
+            "offset": 0,
+            "slot": "182",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1836"
+          },
+          {
+            "label": "maxTransactionAmountBuy",
+            "offset": 0,
+            "slot": "183",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1837"
+          },
+          {
+            "label": "maxTransactionAmountSell",
+            "offset": 0,
+            "slot": "184",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1838"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(DividendTracker)3793": {
+            "label": "contract DividendTracker",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IUniswapV2Router02)2020": {
+            "label": "contract IUniswapV2Router02",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "392d26c4e19427a8546d7c4de9a082f9705efdb4fd3fbd806f3066fbb71793c1": {
+      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "txHash": "0xc21c4863ba13ede9071c9d520d53cde1674934054ab573d1417e934c83842161",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:105"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:106"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:164"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Upgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:631"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Upgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:633"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ERC20Upgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:635"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:637"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:638"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:994"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:168"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\CookieSaleTokenProxy.sol:208"
+          },
+          {
+            "label": "marketingFeeOnBuy",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1305"
+          },
+          {
+            "label": "marketingFeeOnSell",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1306"
+          },
+          {
+            "label": "developmentFeeOnBuy",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1308"
+          },
+          {
+            "label": "developmentFeeOnSell",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1309"
+          },
+          {
+            "label": "rewardFeeOnBuy",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1311"
+          },
+          {
+            "label": "rewardFeeOnSell",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1312"
+          },
+          {
+            "label": "liquidityFeeOnBuy",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1314"
+          },
+          {
+            "label": "liquidityFeeOnSell",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1315"
+          },
+          {
+            "label": "buyBackFeeOnBuy",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1317"
+          },
+          {
+            "label": "buyBackFeeOnSell",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1318"
+          },
+          {
+            "label": "_totalFeesOnBuy",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1320"
+          },
+          {
+            "label": "_totalFeesOnSell",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1321"
+          },
+          {
+            "label": "marketingWallet",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_address",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1323"
+          },
+          {
+            "label": "developmentWallet",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_address",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1324"
+          },
+          {
+            "label": "buybackWallet",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_address",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1325"
+          },
+          {
+            "label": "walletToWalletTransferWithoutFee",
+            "offset": 20,
+            "slot": "165",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1327"
+          },
+          {
+            "label": "uniswapV2Router",
+            "offset": 0,
+            "slot": "166",
+            "type": "t_contract(IUniswapV2Router02)2021",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1329"
+          },
+          {
+            "label": "uniswapV2Pair",
+            "offset": 0,
+            "slot": "167",
+            "type": "t_address",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1330"
+          },
+          {
+            "label": "DEAD",
+            "offset": 0,
+            "slot": "168",
+            "type": "t_address",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1332"
+          },
+          {
+            "label": "swapping",
+            "offset": 20,
+            "slot": "168",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1334"
+          },
+          {
+            "label": "swapTokensAtAmount",
+            "offset": 0,
+            "slot": "169",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1335"
+          },
+          {
+            "label": "swapEnabled",
+            "offset": 0,
+            "slot": "170",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1336"
+          },
+          {
+            "label": "swapWithLimit",
+            "offset": 1,
+            "slot": "170",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1337"
+          },
+          {
+            "label": "tradingEnabled",
+            "offset": 2,
+            "slot": "170",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1339"
+          },
+          {
+            "label": "launchTime",
+            "offset": 0,
+            "slot": "171",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1340"
+          },
+          {
+            "label": "antibotEnabled",
+            "offset": 0,
+            "slot": "172",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1341"
+          },
+          {
+            "label": "_isExcludedFromFees",
+            "offset": 0,
+            "slot": "173",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1343"
+          },
+          {
+            "label": "automatedMarketMakerPairs",
+            "offset": 0,
+            "slot": "174",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1344"
+          },
+          {
+            "label": "dividendTracker",
+            "offset": 0,
+            "slot": "175",
+            "type": "t_contract(DividendTracker)3798",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1346"
+          },
+          {
+            "label": "rewardToken",
+            "offset": 0,
+            "slot": "176",
+            "type": "t_address",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1347"
+          },
+          {
+            "label": "gasForProcessing",
+            "offset": 0,
+            "slot": "177",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1348"
+          },
+          {
+            "label": "_isExcludedFromMaxWalletLimit",
+            "offset": 0,
+            "slot": "178",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1804"
+          },
+          {
+            "label": "maxWalletLimitEnabled",
+            "offset": 0,
+            "slot": "179",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1805"
+          },
+          {
+            "label": "maxWalletAmount",
+            "offset": 0,
+            "slot": "180",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1806"
+          },
+          {
+            "label": "_isExcludedFromMaxTxLimit",
+            "offset": 0,
+            "slot": "181",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1840"
+          },
+          {
+            "label": "maxTransactionLimitEnabled",
+            "offset": 0,
+            "slot": "182",
+            "type": "t_bool",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1841"
+          },
+          {
+            "label": "maxTransactionAmountBuy",
+            "offset": 0,
+            "slot": "183",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1842"
+          },
+          {
+            "label": "maxTransactionAmountSell",
+            "offset": 0,
+            "slot": "184",
+            "type": "t_uint256",
+            "contract": "COOKIE",
+            "src": "contracts\\CookieSaleTokenProxy.sol:1843"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(DividendTracker)3798": {
+            "label": "contract DividendTracker",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IUniswapV2Router02)2021": {
+            "label": "contract IUniswapV2Router02",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
